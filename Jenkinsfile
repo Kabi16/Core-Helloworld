@@ -5,7 +5,7 @@ pipeline {
 stages {
  stage('Checkout') {
     steps {
-     git url: 'https://github.com/Kabi16/Core-Helloworld.git', branch: 'master'
+     git url: 'https://github.com/Kabi16/Core-Helloworld.git'
      }
   }
 
