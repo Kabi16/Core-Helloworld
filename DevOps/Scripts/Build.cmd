@@ -12,9 +12,9 @@
 @FOR %%A IN (%*) DO @IF "%%A"=="Debug" @SET MODE=Debug
 
 REM Provide solution path and sonar key for the service
-@SET SOLU="C:\Users\C605978\source\repos\MSBuild\MSBuild.sln"
-@SET SOLUPATH="C:\Users\C605978\source\repos\MSBuild"
-@SET SCRIPTPATH="C:\Users\C605978\source\repos\MSBuild\DevOps\Scripts"
+@SET SOLU="C:\Users\C605978\source\repos\Project\Project.sln"
+@SET SOLUPATH="C:\Users\C605978\source\repos\Project"
+@SET SCRIPTPATH="C:\Users\C605978\source\repos\Project\DevOps\Scripts"
 @SET SONARKEY="SonarAndJenkins"
 @SET SONARNAME="SonarQube1"
 
