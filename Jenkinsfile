@@ -11,37 +11,37 @@ stages {
 
 stage('Restore packages'){
    steps{
-      bat "dotnet restore C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj"
+      bat "dotnet restore C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj"
      }
   }
 
 stage('Clean'){
     steps{
-        bat "dotnet clean C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj"
+        bat "dotnet clean C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj"
      }
    }
 
 stage('Build'){
    steps{
-      bat "dotnet build C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj --configuration Release"
+      bat "dotnet build C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj --configuration Release"
     }
  }
 
 stage('Test: Unit Test'){
    steps {
-     bat "dotnet test C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj"
+     bat "dotnet test C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj"
      }
   }
        
  stage('Test: Integration Test'){
     steps {
-       bat "dotnet test C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj"
+       bat "dotnet test C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj"
       }
    }
     
 stage('Publish'){
      steps{
-       bat "dotnet publish C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\\\Project\\Project.csproj "
+       bat "dotnet publish C:\\Users\\C605978\\source\\repos\\MSBuild\\src\\Project\\Project\\Project.csproj "
      }
   }
  }
